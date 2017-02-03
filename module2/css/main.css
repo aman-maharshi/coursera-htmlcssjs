@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  text-align: center;
+  color: red;
+  //border: 1px solid black;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+.chicken-box, .beef-box, .sushi-box {
+  border: 1px solid black;
+  margin: 1%;
+  margin-bottom: 5%;
+  background-color: rgba(189, 195, 199,1.0);
+}
+.chicken-box > h2, .beef-box > h2, .sushi-box > h2 {
+  border: 1px solid black;
+  float: right;
+  padding: 1%;
+  background-color: rgba(26, 188, 156,1.0);
+  text-align: center;
+  width: 120px;
+}
+.chicken-box p, .beef-box p, .sushi-box p {
+  //border: 1px solid black;
+  clear: right;
+  padding: 1%;
+}
+
+/* for large screens*/
+@media (min-width: 992px) {
+  .chicken-box, .beef-box, .sushi-box {
+    float: left;
+    width: 31%;
+  }
+}
+/* for medium sized screens*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .chicken-box, .beef-box {
+    float: left;
+    width: 48%;
+  }
+  .sushi-box {
+    width: 98%;
+    clear: both;
+  }
+}
+@media (max-width: 767px) {
+  .chicken-box, .beef-box, .sushi-box {
+    width: 98%;
+  }
+}
+/* colors for section headings, beef and sushi*/
+.beef-box > h2 {
+  background-color: rgba(52, 152, 219,1.0);
+}
+.sushi-box > h2 {
+  background-color: rgba(231, 76, 60,1.0);
+}
