@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.chicken, .beef, .sushi {
+    background: rgba(149, 165, 166,0.5);
+    padding: 1em;
+    margin-bottom: 1.5em;
+}
+/* to add a left margin for xs devices*/
+@media(max-width: 800px) {
+    .col-xs-12 {
+        margin-left: 0.5em;
+    }
+}
+
+/* navbar styling */
+.navbar-default {
+    background: rgba(44, 62, 80,1.0) !important;
+}
+.navbar-brand {
+    color: white !important;
+}
+.nav.navbar-nav.navbar-right.visible-xs li a {
+    color: white !important;
+}
+.nav.navbar-nav.navbar-right.visible-xs li a:hover {
+    background:  rgba(149, 165, 166,0.5) !important;
+}
