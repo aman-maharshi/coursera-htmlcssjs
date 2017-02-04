@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+html {
+  background: rgba(149, 165, 166,1.0);
+}
+
+/***************
+    HEADER
+***************/
+#header-nav {
+  border: 0; /*remove the extra bit of space around the nav*/
+  border-radius: 0;
+}
+
+/*****************
+    MAIN
+*****************/
+main {
+  padding-top: 2em;
+  margin-top: 3em;
+  background: rgba(26, 188, 156,1.0);
+}
+.landing-image {
+  border: 1px solid black;
+  height: 500px;
+  widht: 100%;
+  margin-bottom: 2em;
+  background: rgba(236, 240, 241,1.0);
+}
+.three-boxes {
+  border: 1px solid black;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 2em;
+  background: rgba(236, 240, 241,1.0);
+}
+
+/************
+    FOOTER
+*************/
+footer {
+  background: rgba(241, 196, 15,1.0);
+  padding: 2em;
+}
