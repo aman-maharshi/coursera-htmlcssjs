@@ -1,0 +1,190 @@
+:root {
+    --black: #333330;
+    --cyan: #008891;
+    --white: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: var(--white);
+    color: var(--black);
+}
+/************
+    HEADER
+************/
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+nav {
+    width: 100%;
+    height: 100%;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+.home {
+    margin-right: auto;
+}
+nav ul li {
+    padding: 1em;
+}
+nav ul li a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--white);
+}
+nav ul li a:hover {
+    color: var(--cyan);
+}
+/* by default the toggle nav is hidden */
+.toggleNav {
+    display: none; 
+}
+@media (max-width: 500px) {
+    header {
+        padding: 0;
+    }
+
+    /* making the toggle nav visisble for small devices*/
+    .toggleNav {
+        color: var(--white);
+        font-size: 3rem;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        transition: all 0.4s ease;
+    }
+    .toggleNav:hover {
+        color: var(--cyan);
+    }
+    .nav-bar ul {
+        display: none;
+        text-align: center;
+    }
+    
+    /* clicking triggers the open class*/
+    .nav-bar ul.open {
+        display: block;
+    }    
+}
+/**********
+    MAIN
+**********/
+#main {
+    background-color: var(--cyan);
+    padding: 2em;
+    height: 80vh;
+}
+.container {
+    margin: auto;
+    height: 100%;
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#main .container h1 {
+    font-size: 5rem;
+}
+#main .container p {
+    margin-top: 1em;
+    line-height: 1.5;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 500px) {
+    #main .container h1 {
+        font-size: 3rem;
+    }
+    #main .container p {
+        font-size: 1.2rem;
+    }
+}
+/************
+    SKILLS
+************/
+#skills {
+    padding: 2em;
+    background-color: var(--white);
+    margin: 0 auto;
+}
+.icon-row {
+    padding: 1em;
+    font-size: 2rem;
+    width: 100%;
+    border: 1px solid var(--cyan);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.icon-row > p {
+    /* border: 1px solid gray; */
+    padding: 0.5em 0.8em;
+}
+/* Icon Colors */
+.icon-html5 {
+    color: #f16529; 
+}
+.icon-css3 {
+    color: #2965f1;
+}
+.icon-sass {
+    color: #c69;
+}
+.icon-bootstrap {
+    color: #602C50;
+}
+.icon-javascript {
+    color: #F0DB4F;
+}
+.icon-react {
+    color: #00d8ff;
+}
+@media (max-width: 500px) {
+    .icon-row {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 1350px) {
+    
+} 
+/*************
+    PROJECTS
+**************/
+#projects {
+    background-color: var(--cyan);
+    padding: 2em;
+}
+#projects>.container {
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#projects .project {
+    height: 300px;
+    width: 300px;
+    background-color: var(--white);
+}
+@media (max-width: 700px) {
+    #projects>.container {
+        flex-direction: column;
+    }
+    #projects .project:not(:last-child) {
+        margin-bottom: 1em;
+    }
+}
