@@ -93,10 +93,10 @@ body {
 .panel-footer div.row {
   margin-bottom: 35px;
 }
-#hours, #address {
+#hours, #address, #testimonials {
   line-height: 2;
 }
-#hours > span, #address > span {
+#hours > span, #address > span, #testimonials > span {
   font-size: 1.3em;
 }
 #address p {
