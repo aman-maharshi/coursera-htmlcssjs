@@ -2,6 +2,8 @@
 
 1. [Module 2](https://aman-maharshi.github.io/coursera-htmlcssjs/module2/)
 1. [Module 3](https://aman-maharshi.github.io/coursera-htmlcssjs/module3/)
+1. [Module 4](https://aman-maharshi.github.io/coursera-htmlcssjs/module3/)
+1. [Module 5](https://aman-maharshi.github.io/coursera-htmlcssjs/module5/)
 1. [Restaurant Site](https://aman-maharshi.github.io/coursera-htmlcssjs/restaurant-site/)
 1. [Restaurant Site v2](https://aman-maharshi.github.io/coursera-htmlcssjs/restaurant-site-v2/)
 
