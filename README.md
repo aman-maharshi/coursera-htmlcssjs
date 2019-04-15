@@ -16,3 +16,7 @@
 
 Restaurant Site v2
 > Loading the Menu and Specials category dynamically in the same page without changing the url
+
+---
+Module 5
+> This is the final restaurant website from the course
